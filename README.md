@@ -14,7 +14,7 @@
 cat plaintext | ./vigenere_encrypt 4  | ./summary
 
 # 频率的简单统计
-./vigenere_encrypt 4 plaintext | ./statistic
+./vigenere_encrypt 4 plaintext | ./summary | ./statistic
 
 # 用长度为2的密钥猜测实际密钥长度, 计算重合指数IC
 ./vigenere_encrypt 4 plaintext | ./summary | ./icanalyze 2
